@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static bool gameOver;
     public GameObject gameOverPanel;
     public GameObject GetReady;
+    public GameObject gameoverpnl;
 
     public static int gameScore;
     public GameObject score;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
         gameOverPanel.SetActive(true);
 
         score.SetActive(false);
+        gameoverpnl.SetActive(true);
         gameScore = score.GetComponent<Score>().GetScore();
     }
 
